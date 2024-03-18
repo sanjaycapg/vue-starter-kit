@@ -1,11 +1,21 @@
+$font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+$primary-color: rgba(255, 255, 255, 0.87);
+$background-color: #242424;
+$accent-color: #646cff;
+$accent-hover-color: #535bf2;
+$dark-color: #1a1a1a;
+$light-color: #f9f9f9;
+$text-color-light: #213547;
+$text-color-dark: #747bff;
+
 :root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-family: $font-family;
   line-height: 1.5;
   font-weight: 400;
 
   color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+  color: $primary-color;
+  background-color: $background-color;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -15,11 +25,11 @@
 
 a {
   font-weight: 500;
-  color: #646cff;
+  color: $accent-color;
   text-decoration: inherit;
 }
 a:hover {
-  color: #535bf2;
+  color: $accent-hover-color;
 }
 
 body {
@@ -42,12 +52,12 @@ button {
   font-size: 1em;
   font-weight: 500;
   font-family: inherit;
-  background-color: #1a1a1a;
+  background-color: $dark-color;
   cursor: pointer;
   transition: border-color 0.25s;
 }
 button:hover {
-  border-color: #646cff;
+  border-color: $accent-color;
 }
 button:focus,
 button:focus-visible {
@@ -67,13 +77,13 @@ button:focus-visible {
 
 @media (prefers-color-scheme: light) {
   :root {
-    color: #213547;
+    color: $text-color-light;
     background-color: #ffffff;
   }
   a:hover {
-    color: #747bff;
+    color: $text-color-dark;
   }
   button {
-    background-color: #f9f9f9;
+    background-color: $light-color;
   }
 }
